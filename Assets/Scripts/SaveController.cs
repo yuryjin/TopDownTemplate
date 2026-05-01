@@ -9,7 +9,8 @@ public class SaveController : MonoBehaviour
     void Start()
     {
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
-
+        Debug.Log(saveLocation);
+        
         LoadGame();
     }
 
