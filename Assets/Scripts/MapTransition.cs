@@ -4,18 +4,18 @@ using Unity.Cinemachine;
 public class MapTransition : MonoBehaviour
 {
     [SerializeField] private PolygonCollider2D mapBoundary;
-    CinemachineConfiner confiner;
+    CinemachineConfiner2D confiner;
 
     private void Awake()
     {
-        confiner = FindObjectOfType<CinemachineConfiner>();
+        confiner = FindObjectOfType<CinemachineConfiner2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && confiner != null)
         {
-            confiner.m_BoundingShape2D = mapBoundary;
+            confiner.BoundingShape2D = mapBoundary;
         }
     }
 }
