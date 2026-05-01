@@ -1,8 +1,10 @@
 using UnityEngine;
+using Unity.Cinemachine;
+using System.IO;
 
 public class SaveController : MonoBehaviour
 {
-    private string saveLocation
+    private string saveLocation;
     
     void Start()
     {
@@ -16,10 +18,10 @@ public class SaveController : MonoBehaviour
         SaveData saveData = new SaveData
         {
             playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position,
-            mapBoundary = FindObjectOfType<CinemachineConfiner>().BoundingShape2D.gameObject.name
+            mapBoundary = FindObjectOfType<CinemachineConfiner2D>().BoundingShape2D.gameObject.name
         };
         
-        file.writeAllText(saveLocation, JsonUtility.ToJson(saveData));
+        File.WriteAllText(saveLocation, JsonUtility.ToJson(saveData));
     }
 
     public void LoadGame()
@@ -28,7 +30,7 @@ public class SaveController : MonoBehaviour
         {
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
             GameObject.FindGameObjectWithTag("Player").transform.position = saveData.playerPosition;
-            FindObjectOfType<CinemachineConfiner>().BoundingShape2D =
+            FindObjectOfType<CinemachineConfiner2D>().BoundingShape2D =
                 GameObject.Find(saveData.mapBoundary).GetComponent<PolygonCollider2D>();
         }
         else
