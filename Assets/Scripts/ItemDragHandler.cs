@@ -43,10 +43,10 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             }
             else
             {
-                dropSlot.currentItem = null;
+                originalSlot.currentItem = null;
             }
-            
-            transform.SetParent(originalParent.transform);
+
+            transform.SetParent(dropSlot.transform);
             dropSlot.currentItem = gameObject;
         }
         else
