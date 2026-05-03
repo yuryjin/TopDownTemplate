@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1295416110461841337}
   - component: {fileID: 8753113826273409326}
   - component: {fileID: 7303916122563353265}
+  - component: {fileID: 2825114672482347639}
   - component: {fileID: 5957580749051336101}
   m_Layer: 5
   m_Name: Item
@@ -76,6 +77,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &2825114672482347639
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4152742177436904300}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &5957580749051336101
 MonoBehaviour:
   m_ObjectHideFlags: 0
