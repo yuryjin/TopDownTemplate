@@ -181,6 +181,7 @@ MonoBehaviour:
   slotCount: 24
   itemPrefabs:
   - {fileID: 920616957157969555, guid: 51f37410c274f81f6ab748ef32ae93db, type: 3}
+  - {fileID: 2922029169029594496, guid: 4b2a79e452b900813a8dfae61f46503a, type: 3}
 --- !u!1 &74803956
 GameObject:
   m_ObjectHideFlags: 0
