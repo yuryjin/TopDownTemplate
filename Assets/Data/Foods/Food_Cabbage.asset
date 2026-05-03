@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0748792ffc6cda604a26107e2ab2bbe9, type: 3}
+  m_Name: Food_Cabbage
+  m_EditorClassIdentifier: Assembly-CSharp::FoodData
+  foodName: "\u041a\u0430\u043f\u0443\u0441\u0442\u0430"
+  sprite: {fileID: 3244378606169850246, guid: 2a67deaa9c7ed65d5b29a8b9120b85e6, type: 3}
