@@ -178,10 +178,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   inventoryPanel: {fileID: 1033470781}
   slotPrefab: {fileID: 372275535591389852, guid: 9925339cd022d3dac8fbad3b4445afe6, type: 3}
-  slotCount: 24
+  itemPrefab: {fileID: 920616957157969555, guid: 51f37410c274f81f6ab748ef32ae93db, type: 3}
   itemPrefabs:
   - {fileID: 920616957157969555, guid: 51f37410c274f81f6ab748ef32ae93db, type: 3}
   - {fileID: 2922029169029594496, guid: 4b2a79e452b900813a8dfae61f46503a, type: 3}
+  slotCount: 24
+  foods:
+  - {fileID: 11400000, guid: 53378fe2beca4c1fb89e7d4e12c580f3, type: 2}
+  - {fileID: 11400000, guid: ba1395e1987e4081ad8cb5e98ea32c3d, type: 2}
+  - {fileID: 11400000, guid: 136ba7d29d0b46f3b063fb3a3c7cd6fb, type: 2}
+  - {fileID: 11400000, guid: 66c88245b607492fb6243c5cb9e65368, type: 2}
+  - {fileID: 11400000, guid: b73f8ede6b924240b117e799079b83fb, type: 2}
+  - {fileID: 11400000, guid: fedc0a9faf2c464398ac9b5867aa306d, type: 2}
+  - {fileID: 11400000, guid: 35ab437508924ceea17d1c689d52f0bb, type: 2}
+  - {fileID: 11400000, guid: d2fcc415d7354c26b8528dfeca59646e, type: 2}
+  - {fileID: 11400000, guid: 6bbaad64d0724a5388f1f1b23c10f110, type: 2}
 --- !u!1 &74803956
 GameObject:
   m_ObjectHideFlags: 0
@@ -18679,6 +18690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d7bb2d6c2594b1caea47462ae9f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodPickup
+  foodData: {fileID: 11400000, guid: 53378fe2beca4c1fb89e7d4e12c580f3, type: 2}
   foodName: "\u0421\u0432\u0451\u043A\u043B\u0430"
 --- !u!58 &945227474
 CircleCollider2D:
@@ -18765,7 +18777,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8172243079785830052, guid: dcf4091b3f06d2638866ffd6bf149547, type: 3}
+  m_Sprite: {fileID: 2950869812727453837, guid: e2381cfa0ba68251a9f4afadc1538817, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19429,6 +19441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d7bb2d6c2594b1caea47462ae9f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodPickup
+  foodData: {fileID: 11400000, guid: b73f8ede6b924240b117e799079b83fb, type: 2}
   foodName: "\u041C\u0451\u0434"
 --- !u!58 &1156577752
 CircleCollider2D:
@@ -19515,7 +19528,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 9179602183448177600, guid: fe8968fef12ec0f58bce0ff875f05659, type: 3}
+  m_Sprite: {fileID: 3327116256587992624, guid: 0f013f2d4fd98d48aa6945c8962744cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19677,6 +19690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d7bb2d6c2594b1caea47462ae9f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodPickup
+  foodData: {fileID: 11400000, guid: 66c88245b607492fb6243c5cb9e65368, type: 2}
   foodName: "\u041A\u043B\u0443\u0431\u043D\u0438\u043A\u0430"
 --- !u!58 &1203706613
 CircleCollider2D:
@@ -19763,7 +19777,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1669490993913548592, guid: 699b66eee5f5c6532a336c2bcdffaff0, type: 3}
+  m_Sprite: {fileID: 3579979325370944529, guid: bb851b14d431567579e7b5593be82516, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20005,6 +20019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d7bb2d6c2594b1caea47462ae9f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodPickup
+  foodData: {fileID: 11400000, guid: 136ba7d29d0b46f3b063fb3a3c7cd6fb, type: 2}
   foodName: "\u0422\u044B\u043A\u0432\u044B"
 --- !u!58 &1450177045
 CircleCollider2D:
@@ -20091,7 +20106,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 9128064221340482742, guid: ea9f3c56f7c12548dba633d4e7b730ab, type: 3}
+  m_Sprite: {fileID: 3244378606169850246, guid: 2a67deaa9c7ed65d5b29a8b9120b85e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
