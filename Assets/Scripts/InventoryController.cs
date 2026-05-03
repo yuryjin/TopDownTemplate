@@ -4,20 +4,20 @@ public class InventoryController : MonoBehaviour
 {
     public GameObject inventoryPanel;
     public GameObject slotPrefab;
-    public int slotCount;
-    public GameObject[] itemPrefabs;
+    public GameObject itemPrefab;
+    public FoodData[] foods;
 
     void Start()
     {
-        for (int i = 0; i < slotCount; i++)
+        for (int i = 0; i < foods.Length; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
-            if (i < itemPrefabs.Length)
-            {
-                GameObject item =  Instantiate(itemPrefabs[i], slot.transform);
-                item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                slot.currentItem = item;
-            }
+            GameObject item = Instantiate(itemPrefab, slot.transform);
+            item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+            ItemView view = item.GetComponent<ItemView>();
+            view.foodData = foods[i];
+            view.Apply();
+            slot.currentItem = item;
         }
     }
 }
