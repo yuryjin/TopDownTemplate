@@ -180,7 +180,7 @@ MonoBehaviour:
   slotPrefab: {fileID: 372275535591389852, guid: 9925339cd022d3dac8fbad3b4445afe6, type: 3}
   slotCount: 24
   itemPrefabs:
-  - {fileID: 4152742177436904300, guid: 51f37410c274f81f6ab748ef32ae93db, type: 3}
+  - {fileID: 920616957157969555, guid: 51f37410c274f81f6ab748ef32ae93db, type: 3}
 --- !u!1 &74803956
 GameObject:
   m_ObjectHideFlags: 0
